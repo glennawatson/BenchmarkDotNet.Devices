@@ -1,0 +1,53 @@
+﻿[assembly: System.Runtime.Versioning.TargetFrameworkAttribute(".NETStandard,Version=v2.0", FrameworkDisplayName="")]
+namespace BenchmarkDotNet.Extensions
+{
+    public class static ReflectionExtensions { }
+}
+namespace BenchmarkDotNet.Toolchains.MsBuildSdkExtras
+{
+    public class MsBuildSdkExtrasGenerator : BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator
+    {
+        public MsBuildSdkExtrasGenerator(string targetFrameworkMoniker, string cliPath, string packagesPath, string runtimeFrameworkVersion) { }
+        public string RuntimeFrameworkVersion { get; }
+        protected virtual string TemplateName { get; }
+        protected override void GenerateProject(BenchmarkDotNet.Running.BuildPartition buildPartition, BenchmarkDotNet.Toolchains.ArtifactsPaths artifactsPaths, BenchmarkDotNet.Loggers.ILogger logger) { }
+        protected override string GetBinariesDirectoryPath(string buildArtifactsDirectoryPath, string configuration) { }
+        protected override string GetBuildArtifactsDirectoryPath(BenchmarkDotNet.Running.BuildPartition buildPartition, string programName) { }
+        protected override string GetProjectFilePath(string buildArtifactsDirectoryPath) { }
+        protected virtual System.IO.FileInfo GetProjectFilePath(System.Type benchmarkTarget, BenchmarkDotNet.Loggers.ILogger logger) { }
+        protected virtual string GetRuntimeSettings(BenchmarkDotNet.Jobs.GcMode gcMode, BenchmarkDotNet.Characteristics.IResolver resolver) { }
+    }
+    public class MsBuildSdkExtrasToolchain : BenchmarkDotNet.Toolchains.Toolchain
+    {
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain NetCoreApp20;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain NetCoreApp21;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain NetCoreApp22;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain NetCoreApp30;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain Tizen40;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain Tizen50;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinIOS10;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMac20;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid10;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid23;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid403;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid41;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid42;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid43;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid44;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid4487;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid50;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid51;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid60;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid70;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid71;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid80;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid81;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinMonoAndroid90;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinTouch10;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinTVOS10;
+        public static readonly BenchmarkDotNet.Toolchains.IToolchain XamarinWatchOS10;
+        protected MsBuildSdkExtrasToolchain(string name, BenchmarkDotNet.Toolchains.IGenerator generator, BenchmarkDotNet.Toolchains.IBuilder builder, BenchmarkDotNet.Toolchains.IExecutor executor, string customDotNetCliPath) { }
+        public static BenchmarkDotNet.Toolchains.IToolchain From(BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings settings) { }
+        public override bool IsSupported(BenchmarkDotNet.Running.BenchmarkCase benchmarkCase, BenchmarkDotNet.Loggers.ILogger logger, BenchmarkDotNet.Characteristics.IResolver resolver) { }
+    }
+}

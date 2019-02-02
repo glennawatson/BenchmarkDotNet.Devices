@@ -256,3 +256,7 @@ paket-files/
 
 # The generated DB
 repository.db
+
+# API Approval received
+src/*.Tests/**/ApiApprovalTests*.received.txt
+

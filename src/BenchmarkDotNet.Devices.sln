@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkDotNet.Msbuild.Sdk.Extras", "BenchmarkDotNet.Msbuild.Sdk.Extras\BenchmarkDotNet.Msbuild.Sdk.Extras.csproj", "{C25E8029-0D14-48DE-943F-9B72BAF072EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkDotNet.Devices.Tests", "BenchmarkDotNet.Devices.Tests\BenchmarkDotNet.Devices.Tests.csproj", "{404E700F-7A34-4133-A9AF-AD878B19ADD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C25E8029-0D14-48DE-943F-9B72BAF072EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25E8029-0D14-48DE-943F-9B72BAF072EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25E8029-0D14-48DE-943F-9B72BAF072EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404E700F-7A34-4133-A9AF-AD878B19ADD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404E700F-7A34-4133-A9AF-AD878B19ADD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404E700F-7A34-4133-A9AF-AD878B19ADD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404E700F-7A34-4133-A9AF-AD878B19ADD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
