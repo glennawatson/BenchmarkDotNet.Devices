@@ -56,18 +56,6 @@ jobs:
       artifactType: container
       artifactName: Binaries
 
-  - task: CopyFiles@2
-    inputs:
-      Contents: 'artifacts/Events/*.cs'
-      TargetFolder: '$(build.artifactstagingdirectory)\Events'
-
-  - task: PublishBuildArtifacts@1
-    displayName: Publish Generated Events
-    inputs:
-      pathToPublish: '$(build.artifactstagingdirectory)\Events'
-      artifactType: container
-      artifactName: Events
-
 - job: Mac
   pool:
     vmImage: 'macOS-10.13'
