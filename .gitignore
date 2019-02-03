@@ -260,3 +260,8 @@ repository.db
 # API Approval received
 src/*.Tests/**/ApiApprovalTests*.received.txt
 
+# Cake folders
+tools/
+artifacts/
+
+
